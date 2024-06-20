@@ -1,0 +1,19 @@
+:root{
+    --bg-color:rgb(74, 71, 71);
+    --main-title-bg:yellow;
+    --text-color:white;
+    --font-size:10px;
+}
+html,body{
+    font-size: var(--font-size);
+    background-color: var(--bg-color);
+}
+h1{
+    background-color: var(--main-title-bg);
+    text-align: center;
+    font-size: 3rem;
+}
+p{
+    color: var(--text-color);
+    font-size: 2rem;
+}

@@ -5,12 +5,15 @@ window.onload = function(){
         const b = Math.floor(Math.random() * 256);
         return `rgb(${r}, ${g}, ${b})`;
     }
+
+    let lastScrollValue = 0;
     window.addEventListener('scroll', function(){
         let scrollPositionY = window.scrollY;
-        // console.log(`Scroll position ${scrollPositionY}`);
-        if(Math.floor(scrollPositionY)%100 === 0){
+
+        if(Math.floor(scrollPositionY)/100 >Math.floor(lastScrollValue)/100 ){
             // console.log(`Scroll position ${scrollPositionY}`);
             document.body.style.background = getRandomColor();
+            lastScrollValue = scrollPositionY;
         }
     });
 
