@@ -1,0 +1,6 @@
+<email>
+    <to>User</to>
+    <from>test@gmail.com</from>
+    <text>Lorem ipsum</text>
+    <json>javascript string object notation</json>
+</email>

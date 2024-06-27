@@ -1,0 +1,9 @@
+{
+    "username":"Tim",
+    "userAge":34,
+    "married":true,
+    "friends":["John", "Tom"],
+    "company":{
+        "companyName":"Band Super"
+    }
+}
