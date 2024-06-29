@@ -1,0 +1,9 @@
+{
+    "keyName":"name",
+    "userAge":33,
+    "married":true,
+    "friends":["John", "Sara"],
+    "company":{
+        "companyName":"Best bank"
+    }
+}
