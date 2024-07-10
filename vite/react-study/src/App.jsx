@@ -18,6 +18,7 @@ import Main from './components/usersOrder/Main'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
+import UserInfo from './pages/UserInfo'
 function App() {
   const [count, setCount] = useState(0)
   let headerText = 'Hello text'
@@ -29,7 +30,9 @@ function App() {
           <Header></Header>
           <Routes>
             <Route path='/' element={<HomePage></HomePage>}></Route>
-            <Route path='/about' element={<AboutPage></AboutPage>}></Route>
+            <Route path="about" element={<AboutPage></AboutPage>}>
+              <Route path="user" element={<UserInfo />} />
+            </Route>
             <Route path='/tel' element={<ContactPage></ContactPage>}></Route>
           </Routes>
         </Router>
